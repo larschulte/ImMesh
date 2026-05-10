@@ -16,8 +16,8 @@ img_point_cov : 1000 #100
 laser_point_cov : 0.001 #0.001
 
 common:
-    lid_topic:  "/kitti/velo"
-    imu_topic:  "/kitti/imu"
+    lid_topic:  "/velodyne_points"
+    # imu_topic:  "/kitti/imu"
 
 preprocess:
     lidar_type: 2               # Velodyne Lidar
@@ -81,4 +81,4 @@ meshing:
     voxel_resolution: 0.4           # The resolution of voxel
     region_size: 10.0               # Size of region
     number_of_pts_append_to_map: 10000  # Number of pts appending to map (per-frame)
-    if_draw_mesh: 1
+    if_draw_mesh: 0
